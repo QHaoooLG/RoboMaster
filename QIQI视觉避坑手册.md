@@ -1,11 +1,14 @@
 # 视觉避坑手册-RM-QIQI
 
+---
+
 ## ROS2必备工具/包
 - ROS2-humble
 - concol
 - python3
 - camera-calibration
 
+---
 
 ## 编译/包
 
@@ -22,7 +25,8 @@ ros2 run	//该命令执行的是install文件夹中的文件，故需要更新�
 
 - 在ubuntu上用命令行下载安装某些包时最好保证较好的网速，而且部分包在安装时会定位到外网，也就需要挂梯子，如在conda虚拟环境中用pip安装torch相关工具包(这个是在ubuntu22.04上安装ROS1-noetic用的，即ROS2-humble与ROS1-noetic共存，22级这届由于孙队的哨兵导航是在ubuntu20.04上ros1-noetic框架下写的，而各个兵种的自瞄代码都部署的是陈军的开源代码，只在ubuntu22.04上的ros2-humble成功运行过，所以在找能让ros1和ros2在同一个ubuntu系统上共存的方案)
 > ubuntu系统的梯子可以用Clash，免费注册一个，有免费的加速节点，第一次用之前还要手动配置一下网络代理IP，之后上外网就先切换为手动网络代理+开启Clash，如果是访问国内网站如csdn等就再切换回自动代理即可
- 
+
+---
 
 ## 相机
 
@@ -41,14 +45,17 @@ ros2 run	//该命令执行的是install文件夹中的文件，故需要更新�
 > sudo apt install ros-humble-camera-calibration
 > ```
 
+---
 
 ## 仿真
 
 
 - 调出`rqt`或`rviz2`后可以查看经过cv处理后的图像result_img，在其中心处有绘制一个红色小圆圈作为图像中心点，与中心点绘制相关的代码为`rm_auto_aim-main/armor_detector/src/detectoe.cpp`中的`cam_center`参数部分
 
+---
 
 ## 调车(与电控联调)
+
 
 整车进行实战训练前的一次完整自瞄调试流程
 
@@ -65,3 +72,9 @@ ros2 run	//该命令执行的是install文件夹中的文件，故需要更新�
   3. 打5m靶 -> 空气阻力影响较大，继续调空气阻力系数，保证能打中装甲板即可
   4. 测试击打旋转/平移中的实车装甲板 -> 调机器人固有偏差(预测时间)，使旋转和平移两种情况下的最终击打效果均为良好即可
 
+---
+
+## 参赛前准备
+
+
+- 出发前10天操作手训练，期间
