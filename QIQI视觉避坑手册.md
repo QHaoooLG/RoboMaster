@@ -28,6 +28,8 @@
       官网下载
    - Clash -> 加速访问github以及上传下载代码
       队内资源共享或github下载
+   - steam++ (瓦特加速器)
+      可加速github，涵盖windows和linux平台
    - vscode -> 查看和编辑代码
       官网下载
    - 小鱼一键安装ROS2
