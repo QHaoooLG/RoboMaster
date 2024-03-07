@@ -19,11 +19,30 @@
 6. 安装完毕，检查是否有wifi，没有就买个带天线免驱动安装的wifi接收器，附可购链接
    https://m.tb.cn/h.5E0tk1j5Z840KMd?tk=ENAKWm1A8We
    配好wifi，在`开始`界面中打开`软件更新器`进行更新，更新完毕后重启，新建终端，输入`sudo apt-get update`和`sudo apt-get upgrade`检查更新
-7. 在主目录下新建文件夹`HOME`，用于存放安装的其他软件或功能包等，自瞄代码工作空间文件夹直接放到主目录下即可
-8. 在主目录创建自瞄代码工作空间文件夹`RM-Vision-Main`，然后用github把自瞄代码源代码文件夹`src`放进去，整体呈现编译架构如下：
+7. 依次完成以下基本配置：
+   - 谷歌输入法 
+      `sudo apt install fcitx-googlepinyin`
+   - Git
+      `sudo apt install git`
+   - QQ 
+      官网下载
+   - Clash -> 加速访问github以及上传下载代码
+      队内资源共享或github下载
+   - vscode -> 查看和编辑代码
+      官网下载
+   - 小鱼一键安装ROS2
+      `wget http://fishros.com/install -O fishros && sudo bash fishros
+`
+   - 工业相机对应的SDK和驱动工具包
+      去品牌官网下载页下载
+   - edge浏览器
+      推荐使用，在ubuntu上能用的浏览器里算是比较好用的，账号登陆后自动同步收藏夹很方便，教程随手收藏，系统崩了重装不丢失
+1. 在主目录下新建文件夹`HOME`，用于存放安装的其他软件或功能包等，自瞄代码工作空间文件夹直接放到主目录下即可
+2.  在主目录创建自瞄代码工作空间文件夹`RM-Vision-Main`，然后用github把自瞄代码源代码文件夹`src`放进去，整体呈现编译架构如下：
    
    > 下载安装包前需要终端输入`uname -m`查看系统架构，选择对应版本的安装包，后续如相机SDK工具包也要看好架构安装
-9.  
+3.  十大
+4.  
    
 
 ---
