@@ -55,7 +55,7 @@
     sudo apt-get install ros-humble-camera-info-manager
     ```
     - 运行陈君的自瞄代码需要看源码中每个功能包里的`README.md`装好相关依赖，如`serial_driver 依赖`等
-11.  
+11. 直到自瞄代码的`src`能成功编译就算整个环境配置完毕了，建议再设置以下仿真工具`rqt`调出其图像显示和debug列表 
    
 
 ---
