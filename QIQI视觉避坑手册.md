@@ -7,7 +7,6 @@
 
 > 所需工具：
 > 1. 空U盘(最好64G起步，烧镜像别买惠普u盘，推荐金士顿)
-> 2.
 
 1. ubuntu官网下载所需版本的镜像，用镜像烧录工具，如：`SD Card Formatter`、`Fedora Media Writter`等，把下载的(.iso)文件烧录到空u盘中，制作系统盘
    > 烧录镜像前最好先把u盘格式化，推荐使用`Fedora Media Writter`中的格式化功能
@@ -45,7 +44,7 @@
    |
    |---src
    > 下载安装包前需要终端输入`uname -m`或`sudo dpkg --print-architecture`查看系统架构，选择对应版本的安装包，后续如相机SDK工具包也要看好架构安装
-10. 到自瞄代码工作空间`.../RM-Vision-Main`下，终端输入
+10.  到自瞄代码工作空间`.../RM-Vision-Main`下，终端输入
     ```shell
     colcon build
     ```
@@ -55,7 +54,7 @@
     sudo apt-get install ros-humble-camera-info-manager
     ```
     - 运行陈君的自瞄代码需要看源码中每个功能包里的`README.md`装好相关依赖，如`serial_driver 依赖`等
-11. 直到自瞄代码的`src`能成功编译就算整个环境配置完毕了，建议再设置以下仿真工具`rqt`调出其图像显示和debug列表 
+11.  直到自瞄代码的`src`能成功编译就算整个环境配置完毕了，建议再设置以下仿真工具`rqt`调出其图像显示和debug列表 
    
 
 ---
